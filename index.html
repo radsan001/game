@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Smash - Arcade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- The Game Canvas -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Viral Hooks / UI Overlays -->
+        <div id="ui-layer">
+            <div id="top-bar">
+                <div class="stat-box">SCORE <br><span id="score">0</span></div>
+                <div class="stat-box">LEVEL <br><span id="level">1</span></div>
+                <div class="stat-box">BEST <br><span id="high-score">0</span></div>
+            </div>
+
+            <!-- Viral Challenge Text -->
+            <div id="challenge-text" class="hidden">Only 1% can survive past Score 100!</div>
+
+            <!-- Controls -->
+            <div id="controls">
+                <button id="btn-pause">Pause</button>
+                <button id="btn-mute">Mute</button>
+            </div>
+
+            <!-- Game Over / Start Screen -->
+            <div id="overlay-screen" class="visible">
+                <h1 id="overlay-title">NEON SMASH</h1>
+                <p id="overlay-desc">Drag to move. Smash GREEN. Avoid RED.</p>
+                <button id="btn-start" class="glow-button">PLAY NOW</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
